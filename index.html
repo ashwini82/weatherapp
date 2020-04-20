@@ -3,26 +3,45 @@
 <head>
 	<meta  charset="UTF-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Weather App</title>
-	<style type="text/css" src="style.css"></style>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+ <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.2.2/moment-timezone-with-data-2010-2020.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<title>Weather App</title>-->
 </head>
+
 <body>
-	<h1>Weather App
-	<div id="temp"></div>
-	<div id="time"></div>
-     </h1>
-     <h2><div id="location"></div></h2>
-  <form>
-  	<input type="text" name="Enter city">
-  	<button class="btn">Enter</button>
-  </form>
+	<h1 class="h1">Weather</h1>
+	
+	<div>
+	
+  	<input type="number" class="input" placeholder="Enter Zip"><br>
+ 
+  	<button type="submit" class="button">Submit</button>
+   </div>
+  
+  <div class="display">
+   
 
+  
+   		<p class="city">City</p>
+   		<p class="country">Country</p>
 
-
-
-
+ 
+        <p class="time">Time:</p>
+      
+        <p class="des">Description:</p>
+         <p class="img"><img src=""></p> 
+        <p class="temp">Temperature:</p>
+  </div>
+</div>
+  </body>	
+  
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.2.2/moment-timezone-with-data-2010-2020.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
