@@ -1,33 +1,36 @@
 .input{
-	position: absolute;
+
    text-align: center;
    background-color: powderblue;
-   display: block;
-   margin-left: 30%;
-   
+  /* display: block;*/
+   margin-left: 20%;
+   padding-left:
+   border: 30px;
    }
 .h1{
  	text-align: center;
  	color:blue;
  	margin-left: 40%;
  } 
+.container{
+	margin-left: 40%;
+}
 .one{
 	background-color: powderblue;
 }
 body{
 	max-width: 70%;
 	background-size: cover;
-background-image: url("https://images.unsplash.com/photo-1545377446-446f9f6bd95b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+background-image: url("https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
 }
 .button{
-	position: static;
-padding: 10px 40px;
+	padding: 2px 20px;
   text-align: center;
-  line-height: 30%;
-  display: inline-block;
-  float: right;
+  /*margin-left: 40%;
+  display: inline-block;*/
+  
   background-color:blue;
-  align-self: center;
+  
 
 }
 .display{
@@ -37,8 +40,9 @@ padding: 10px 40px;
 	font-size: 20px;
 	background-color: skyblue;
 	font-weight: 40px;
-	margin-left: 40%;
-	margin-top: 20%;
+	margin-left: 30%;
+	margin-top: 10%;
 	width:80%;
+	border: 3px solid red;
 }
 

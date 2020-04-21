@@ -8,7 +8,9 @@ var tim = document.querySelector('.time');
 var coun = document.querySelector('.country');
 var icons=document.querySelector('img');
 var date=document.querySelector('.da');
- 
+//var tmax = document.querySelector('.tempmax');
+// var tmin = document.querySelector('.tempmin');
+
 button.addEventListener('click',function(){
 
 var inputValue = document.querySelector('input').value;
@@ -26,12 +28,15 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${inputValue}&units=m
 	var dateValue = [moment().format("MM:DD:YYYY")];
 	var nameValue = data['name'];
     var counValue = data['sys']['country'];
- // console.log(data);
+  //  var tmaxValue = data['main']['temp-max'];
+  //   var tminValue = data['main']['temp-min'];
+  console.log(data);
     name.innerHTML = nameValue ;
 	temp.innerHTML= parseInt((tempValue-273.15) * 9/5 + 32) + '&#8457'; 
 	des.innerHTML = desValue;
 	tim.innerHTML  = dateValue + ' ' + timeValue ;
 	//date.innerHTML= dateValue;
+
 	coun.innerHTML= counValue;
 	icons.src = iconimage;
 }) 
